@@ -13,8 +13,18 @@ struct ContentView: View {
             //background image
             Image("HockeyCardsBackground")
                 .resizable()
-                .scaledToFit()
+            VStack(alignment: .leading){
+                Image("HockeyIconWhite")
+                    .resizable()
+                    .frame(width: 100, height: 100, alignment: .topLeading)
+                HStack(alignment: .center, spacing: 10) {
+                    Image("JackJohnson")
+                        .resizable()
+                        .frame(width: 400, height: 400, alignment: .trailing)
+                }
+            }
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
