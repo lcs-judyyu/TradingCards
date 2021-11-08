@@ -14,7 +14,7 @@ struct ContentView: View {
             Image("HockeyCardsBackground")
                 .resizable()
             //content
-            VStack(alignment: .leading){
+            VStack(alignment: .leading, spacing: 10){
                 Image("HockeyIconWhite")
                     .resizable()
                     .frame(width: 100, height: 100, alignment: .topLeading)
@@ -22,11 +22,21 @@ struct ContentView: View {
                     Text("Ice Hockey")
                         .textCase(.uppercase)
                         .rotationEffect(.degrees(-90))
-                    Image("JackJohnson")
-                        .resizable()
-                        .frame(width: 300, height: 300, alignment: .trailing)
-                        .clipShape(RoundedRectangle(cornerRadius: 9))
+                    VStack {
+                        Image("JackJohnson")
+                            .resizable()
+                            .frame(width: 300, height: 300, alignment: .trailing)
+                        .clipShape(RoundedRectangle(cornerRadius: 9, style: .continuous))
+                        VStack {
+                        Text("John Johnson")
+                        Text("New York Rangers")
+                        }
+                        .padding(.bottom, 90)
+                    }
                 }
+                Text("Data")
+                    .padding(.top, 50)
+                    .padding(.bottom, 130)
             }
         }
         .edgesIgnoringSafeArea(.all)
