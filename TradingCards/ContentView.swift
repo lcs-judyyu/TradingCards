@@ -25,6 +25,7 @@ struct ContentView: View {
                     Image("JackJohnson")
                         .resizable()
                         .frame(width: 300, height: 300, alignment: .trailing)
+                        .clipShape(RoundedRectangle(cornerRadius: 9))
                 }
             }
         }
