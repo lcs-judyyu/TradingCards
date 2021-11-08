@@ -13,14 +13,18 @@ struct ContentView: View {
             //background image
             Image("HockeyCardsBackground")
                 .resizable()
+            //content
             VStack(alignment: .leading){
                 Image("HockeyIconWhite")
                     .resizable()
                     .frame(width: 100, height: 100, alignment: .topLeading)
-                HStack(alignment: .center, spacing: 10) {
+                HStack(alignment: .top, spacing: 10) {
+                    Text("Ice Hockey")
+                        .textCase(.uppercase)
+                        .rotationEffect(.degrees(-90))
                     Image("JackJohnson")
                         .resizable()
-                        .frame(width: 400, height: 400, alignment: .trailing)
+                        .frame(width: 300, height: 300, alignment: .trailing)
                 }
             }
         }
