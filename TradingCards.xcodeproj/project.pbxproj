@@ -12,6 +12,7 @@
 		5A77D3472736CD36008568DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3462736CD36008568DB /* Assets.xcassets */; };
 		5A77D34A2736CD36008568DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3492736CD36008568DB /* Preview Assets.xcassets */; };
 		5A970E542739F708006D5862 /* SairaStencilOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */; };
+		5A970E57273A1175006D5862 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A970E56273A1174006D5862 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5A77D3492736CD36008568DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SairaStencilOne-Regular.ttf"; sourceTree = "<group>"; };
 		5A970E552739F8F7006D5862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5A970E56273A1174006D5862 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				5A970E522739F674006D5862 /* Fonts */,
 				5A77D3422736CD2D008568DB /* TradingCardsApp.swift */,
 				5A77D3442736CD2D008568DB /* ContentView.swift */,
+				5A970E56273A1174006D5862 /* TestView.swift */,
 				5A77D3462736CD36008568DB /* Assets.xcassets */,
 				5A77D3482736CD36008568DB /* Preview Content */,
 			);
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A970E57273A1175006D5862 /* TestView.swift in Sources */,
 				5A77D3452736CD2D008568DB /* ContentView.swift in Sources */,
 				5A77D3432736CD2D008568DB /* TradingCardsApp.swift in Sources */,
 			);

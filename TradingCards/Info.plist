@@ -4,7 +4,7 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SairaStencilOne-Regular</string>
+		<string>Fonts/SairaStencilOne-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

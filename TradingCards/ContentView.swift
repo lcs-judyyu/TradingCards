@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         ZStack {
             //background image
@@ -27,6 +28,17 @@ struct ContentView: View {
                 .padding(.leading, 75)
                 .padding(.bottom, 100)
             //content
+            //ice hockey text
+            HStack(alignment: .top, spacing: 0) {
+                Text("Ice Hockey")
+                    .textCase(.uppercase)
+                    .font(Font.custom("Saira Stencil One", size: 36))
+                    .padding(.trailing, 50)
+                    .multilineTextAlignment(.trailing)
+                    .position()
+                //.frame(width: 50, height: 300, alignment: .topLeading)
+                .rotationEffect(.degrees(-90))
+            }
             VStack(alignment: .leading, spacing: 10){
                 //hockey icon
                 Image("HockeyIconWhite")
@@ -34,24 +46,26 @@ struct ContentView: View {
                     .frame(width: 100, height: 100, alignment: .topLeading)
                 HStack(alignment: .top, spacing: 10) {
                     VStack {
-                        //ice hockey text
-                    Text("Ice Hockey")
-                        .font(Font.custom("SairaStencilOne-Regular", size: 33))
-                        //.frame(width: 50, height: 300, alignment: .topLeading)
-                        .textCase(.uppercase)
-                        //.rotationEffect(.degrees(-90))
+                        //placeholder
+                        Text("Ice Hockey")
+                            .textCase(.uppercase)
+                            .font(Font.custom("Saira Stencil One", size: 36))
+                            .opacity(0)
+                            .multilineTextAlignment(.trailing)
+                            .rotationEffect(.degrees(-90))
                     }
                     VStack {
                         //photo
                         Image("JackJohnson")
                             .resizable()
                             .frame(width: 300, height: 300, alignment: .trailing)
-                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+                            //.opacity(0)
                         VStack {
                             //name
-                        Text("John Johnson")
+                            Text("John Johnson")
                             //team name
-                        Text("New York Rangers")
+                            Text("New York Rangers")
                         }
                         .padding(.bottom, 90)
                     }
