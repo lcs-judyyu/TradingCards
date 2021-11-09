@@ -84,15 +84,17 @@ struct ContentView: View {
                                 .allowsTightening(true)
                             //team name
                             Text("New York Rangers")
+                                .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                         }
                         .padding(.bottom, 90)
                     }
                     .padding(10)
                     //.background()
                 }
-                Text("Data")
-                    .padding(.top, 50)
-                    .padding(.bottom, 140)
+                    HStack {
+                        Text("Data")
+                            .padding(.init(top: 50, leading: 35, bottom: 150, trailing: 75))
+                    }
             }
             //team logo
             VStack {
