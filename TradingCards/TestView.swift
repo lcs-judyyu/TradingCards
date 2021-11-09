@@ -77,22 +77,28 @@ struct TestView: View {
                     .padding(10)
                     //.background()
                 }
-                    HStack {
-                        Text("Data")
-                            .frame(width: 300, height: 200, alignment: .topLeading)
-                            .padding(.leading, 50)
-                            .padding(.bottom, 10)
-                            //.padding(.init(top: 10, leading: 35, bottom: 10, trailing: 35))
-                        //.position(x: 80, y: 50)
+                HStack {
+                    Text("Data")
+                        .padding(.init(top: 50, leading: 35, bottom: 150, trailing: 75))
+                        .opacity(0)
+                }
                     }
             }
-        }
         .edgesIgnoringSafeArea(.all)
     }
-}
+    }
+
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
         TestView()
     }
 }
+
+HStack {
+    Text("Data")
+        .frame(width: 300, height: 200, alignment: .topLeading)
+        .padding(.leading, 50)
+        .padding(.bottom, 10)
+        //.padding(.init(top: 10, leading: 35, bottom: 10, trailing: 35))
+    //.position(x: 80, y: 50)
