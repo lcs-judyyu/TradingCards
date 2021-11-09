@@ -38,9 +38,12 @@ struct TestView: View {
                     .multilineTextAlignment(.trailing)
                     .rotationEffect(.degrees(-90))
                     .position(x: 40, y: 300)
-                    
-                
             }
+            //team logo
+            Image("NYR")
+                .resizable()
+                .frame(width: 100, height: 100, alignment: .topTrailing)
+                .position(x: 350, y: 120)
         }
         .edgesIgnoringSafeArea(.all)
     }
