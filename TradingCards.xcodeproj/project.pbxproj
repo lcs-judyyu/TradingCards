@@ -11,6 +11,7 @@
 		5A77D3452736CD2D008568DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77D3442736CD2D008568DB /* ContentView.swift */; };
 		5A77D3472736CD36008568DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3462736CD36008568DB /* Assets.xcassets */; };
 		5A77D34A2736CD36008568DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3492736CD36008568DB /* Preview Assets.xcassets */; };
+		5A970E542739F708006D5862 /* SairaStencilOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		5A77D3442736CD2D008568DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A77D3462736CD36008568DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A77D3492736CD36008568DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SairaStencilOne-Regular.ttf"; sourceTree = "<group>"; };
+		5A970E552739F8F7006D5862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 		5A77D3412736CD2D008568DB /* TradingCards */ = {
 			isa = PBXGroup;
 			children = (
+				5A970E552739F8F7006D5862 /* Info.plist */,
+				5A970E522739F674006D5862 /* Fonts */,
 				5A77D3422736CD2D008568DB /* TradingCardsApp.swift */,
 				5A77D3442736CD2D008568DB /* ContentView.swift */,
 				5A77D3462736CD36008568DB /* Assets.xcassets */,
@@ -65,6 +70,14 @@
 				5A77D3492736CD36008568DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A970E522739F674006D5862 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A970E542739F708006D5862 /* SairaStencilOne-Regular.ttf in Resources */,
 				5A77D34A2736CD36008568DB /* Preview Assets.xcassets in Resources */,
 				5A77D3472736CD36008568DB /* Assets.xcassets in Resources */,
 			);
@@ -272,6 +286,7 @@
 				DEVELOPMENT_TEAM = 6W8RTWUMYY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +316,7 @@
 				DEVELOPMENT_TEAM = 6W8RTWUMYY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TradingCards/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
