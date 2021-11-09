@@ -27,6 +27,17 @@ struct TestView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 75)
                 .padding(.bottom, 100)
+            //grey for data
+            Color.gray.opacity(0.45)
+                .frame(width: 380, height: 250, alignment: .center)
+                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .padding(.top, 600)
+            
+            //white for data
+            Color.white.opacity(0.8)
+                .frame(width: 370, height: 240, alignment: .center)
+                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .padding(.top, 600)
             //content
             //ice hockey text
             HStack(alignment: .top, spacing: 0) {
@@ -83,6 +94,12 @@ struct TestView: View {
                         .opacity(0)
                 }
                     }
+            VStack {
+                Spacer()
+                Text("Data")
+                    .frame(width: 340, height: 200, alignment: .top)
+                    .padding(.bottom, 50)
+            }
             }
         .edgesIgnoringSafeArea(.all)
     }
@@ -94,11 +111,3 @@ struct TestView_Previews: PreviewProvider {
         TestView()
     }
 }
-
-HStack {
-    Text("Data")
-        .frame(width: 300, height: 200, alignment: .topLeading)
-        .padding(.leading, 50)
-        .padding(.bottom, 10)
-        //.padding(.init(top: 10, leading: 35, bottom: 10, trailing: 35))
-    //.position(x: 80, y: 50)

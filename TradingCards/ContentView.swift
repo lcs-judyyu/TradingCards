@@ -101,6 +101,21 @@ struct ContentView: View {
                     }
             }
             
+            //data section
+            VStack {
+                Spacer()
+                
+                HStack {
+                    Text("Data")
+                        .frame(width: 160, height: 200, alignment: .topLeading)
+                    .padding(.bottom, 55)
+                    
+                    Text("Data")
+                        .frame(width: 160, height: 200, alignment: .topLeading)
+                    .padding(.bottom, 55)
+                }
+            }
+            
             //team logo
             VStack {
                 Image("NYR")
