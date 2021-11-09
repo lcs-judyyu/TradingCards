@@ -15,19 +15,20 @@ struct ContentView: View {
             Image("HockeyCardsBackground")
                 .resizable()
                 .frame(width: 420, height: 900, alignment: .center)
+            
             //clear color background
             //gray for photo and names
             Color.gray
                 .frame(width: 330, height: 460, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 75)
-                .padding(.bottom, 150)
+                .padding(.bottom, 170)
             //white for photo and names
             Color.white
                 .frame(width: 310, height: 440, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 75)
-                .padding(.bottom, 150)
+                .padding(.bottom, 170)
             
             //grey for data
             Color.gray.opacity(0.45)
@@ -55,11 +56,13 @@ struct ContentView: View {
             }
             
             VStack(alignment: .leading, spacing: 10){
+                
                 //hockey icon
                 Image("HockeyIconWhite")
                     .resizable()
                     .frame(width: 100, height: 100, alignment: .topLeading)
                     .padding(.top, 20)
+                
                 HStack(alignment: .top, spacing: 10) {
                     VStack {
                         //placeholder
@@ -75,8 +78,7 @@ struct ContentView: View {
                             .frame(width: 300, height: 300, alignment: .trailing)
                             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                             .padding(.trailing, 11)
-                            .padding(.top, 16)
-                        //.opacity(0)
+                            .padding(.top, 6)
                         VStack {
                             //name
                             Text("John Johnson")
@@ -87,15 +89,18 @@ struct ContentView: View {
                                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                         }
                         .padding(.bottom, 90)
+       
+                        .frame(width: 280, height: 200, alignment: .center)
                     }
                     .padding(10)
-                    //.background()
                 }
                     HStack {
                         Text("Data")
                             .padding(.init(top: 50, leading: 35, bottom: 150, trailing: 75))
+                            .opacity(0)
                     }
             }
+            
             //team logo
             VStack {
                 Image("NYR")
