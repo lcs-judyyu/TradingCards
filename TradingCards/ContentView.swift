@@ -13,7 +13,19 @@ struct ContentView: View {
             //background image
             Image("HockeyCardsBackground")
                 .resizable()
-            
+            //clear color background
+            //gray
+            Color.gray
+                .frame(width: 330, height: 500, alignment: .center)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .padding(.leading, 75)
+                .padding(.bottom, 100)
+            //white
+            Color.white
+                .frame(width: 310, height: 480, alignment: .center)
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                .padding(.leading, 75)
+                .padding(.bottom, 100)
             //content
             VStack(alignment: .leading, spacing: 10){
                 //hockey icon
@@ -34,7 +46,7 @@ struct ContentView: View {
                         Image("JackJohnson")
                             .resizable()
                             .frame(width: 300, height: 300, alignment: .trailing)
-                        .clipShape(RoundedRectangle(cornerRadius: 9, style: .continuous))
+                        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
                         VStack {
                             //name
                         Text("John Johnson")
@@ -44,7 +56,7 @@ struct ContentView: View {
                         .padding(.bottom, 90)
                     }
                     .padding(10)
-                    .background()
+                    //.background()
                 }
                 Text("Data")
                     .padding(.top, 50)
