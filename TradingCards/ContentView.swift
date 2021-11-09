@@ -94,6 +94,7 @@ struct ContentView: View {
                     }
                     .padding(10)
                 }
+                //placeholder
                     HStack {
                         Text("Data")
                             .padding(.init(top: 50, leading: 35, bottom: 150, trailing: 75))
@@ -106,11 +107,22 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack {
-                    Text("Data")
+                    Text("""
+Age: 34
+Number: 3
+Born: United States
+Pos: LD
+""")
                         .frame(width: 160, height: 200, alignment: .topLeading)
                     .padding(.bottom, 55)
                     
-                    Text("Data")
+                    Text("""
+Proj. WAR %: 2%
+EV Off: 3%
+PK: 6%
+QoC: 52%
+Finishing: 27%
+""")
                         .frame(width: 160, height: 200, alignment: .topLeading)
                     .padding(.bottom, 55)
                 }
