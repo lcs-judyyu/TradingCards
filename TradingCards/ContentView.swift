@@ -31,13 +31,15 @@ struct ContentView: View {
             //ice hockey text
             HStack(alignment: .top, spacing: 0) {
                 Text("Ice Hockey")
+                    .kerning(10)
                     .textCase(.uppercase)
                     .font(Font.custom("Saira Stencil One", size: 36))
                     .padding(.trailing, 50)
                     .multilineTextAlignment(.trailing)
-                    .position()
+                    .rotationEffect(.degrees(-90))
+                    .position(x: 40, y: 300)
                 //.frame(width: 50, height: 300, alignment: .topLeading)
-                .rotationEffect(.degrees(-90))
+                
             }
             VStack(alignment: .leading, spacing: 10){
                 //hockey icon
