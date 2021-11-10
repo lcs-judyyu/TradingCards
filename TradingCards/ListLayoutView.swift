@@ -21,14 +21,14 @@ struct ListLayoutView: View {
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Jack Johnson")
                             .bold()
-                            .font(.headline)
                         Text("New York Rangers")
                             .font(.caption)
                     }
+                    .foregroundColor(Color.white)
                 }
                 .padding(.vertical, 2)
             }
-            //.listRowBackground(Color.blue.opacity(0.4))
+            .listRowBackground(Color("navyBlue").opacity(1))
             .listRowSeparatorTint(.blue)
             
             
