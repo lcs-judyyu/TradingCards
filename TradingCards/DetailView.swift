@@ -18,6 +18,7 @@ struct DetailView: View {
             Image(player.backgroundImage)
                 .resizable()
                 .frame(width: 420, height: 900, alignment: .center)
+                .edgesIgnoringSafeArea(.all)
             
             //clear color background
             //gray for photo and names
@@ -38,13 +39,13 @@ struct DetailView: View {
             Color.gray.opacity(0.45)
                 .frame(width: 380, height: 220, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                .padding(.top, 560)
+                .padding(.top, 540)
             
             //white for data
             Color.white.opacity(0.8)
                 .frame(width: 370, height: 210, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                .padding(.top, 560)
+                .padding(.top, 540)
             
             //content
             //ice hockey text
