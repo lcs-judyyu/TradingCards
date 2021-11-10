@@ -21,13 +21,13 @@ struct ContentView: View {
             Color.gray
                 .frame(width: 330, height: 460, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                .padding(.leading, 75)
+                .padding(.leading, 65)
                 .padding(.bottom, 170)
             //white for photo and names
             Color.white
                 .frame(width: 310, height: 440, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                .padding(.leading, 75)
+                .padding(.leading, 65)
                 .padding(.bottom, 170)
             
             //grey for data
@@ -64,7 +64,7 @@ struct ContentView: View {
                     .padding(.top, 20)
                     .padding(.leading, 10)
                 
-                HStack(alignment: .top, spacing: 10) {
+                HStack(alignment: .top, spacing: 7) {
                     VStack {
                         //placeholder
                         Text("Ice Hockey")
@@ -78,20 +78,27 @@ struct ContentView: View {
                             .resizable()
                             .frame(width: 300, height: 300, alignment: .center)
                             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                            .padding(.trailing, 11)
+                            .padding(.trailing, 17)
                             .padding(.top, 6)
+                        
                         VStack {
 
                             //name
                             Text("John Johnson")
                                 .font(Font.custom("Andale Mono", size: 36).weight(.bold))
+                                .textCase(.uppercase)
                                 .allowsTightening(true)
+                            
+                            Divider().frame(width: 130, height: 2, alignment: .center).background(Color.gray)
+                            
                             //team name
                             Text("New York Rangers")
-                                .font(Font.custom("Avenir Next", size: 20).weight(.regular))
+                                .font(Font.custom("Avenir Next Condensed", size: 20).weight(.regular))
+                                .padding(.top, 5)
                         }
                         .padding(.bottom, 10)
                         .frame(width: 280, height: 130, alignment: .center)
+                        .padding(.trailing, 20)
                     }
                     .padding(10)
                 }
