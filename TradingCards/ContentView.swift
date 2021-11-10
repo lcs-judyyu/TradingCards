@@ -33,13 +33,13 @@ struct ContentView: View {
             //grey for data
             Color.gray.opacity(0.45)
                 .frame(width: 380, height: 240, alignment: .center)
-                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.top, 570)
             
             //white for data
             Color.white.opacity(0.8)
                 .frame(width: 370, height: 230, alignment: .center)
-                .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.top, 570)
                 
             //content
@@ -93,7 +93,7 @@ struct ContentView: View {
                             
                             //team name
                             Text("New York Rangers")
-                                .font(Font.custom("Avenir Next Condensed", size: 20).weight(.regular))
+                                .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                                 .padding(.top, 5)
                         }
                         .padding(.bottom, 10)
@@ -121,7 +121,7 @@ Number: 3
 Born: United States
 Pos: LD
 """)
-                        .kerning(5)
+                        .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                     .padding(.bottom, 55)
                     
@@ -132,11 +132,11 @@ PK: 6%
 QoC: 52%
 Finishing: 27%
 """)
-                        .kerning(5)
+                        .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                     .padding(.bottom, 55)
                 }
-                .font(Font.custom("Avenir Next Condensed", size: 20).weight(.regular))
+                .font(Font.custom("Avenir Next", size: 20).weight(.regular))
             }
             
             //team logo
