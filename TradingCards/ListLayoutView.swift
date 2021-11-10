@@ -9,12 +9,21 @@ import SwiftUI
 
 struct ListLayoutView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            NavigationLink(destination: TestView()){
+                HStack {
+                    Text("Test View")
+                }
+            }
+        }
+        .navigationTitle("Hockey Cards")
     }
 }
 
 struct ListLayoutView_Previews: PreviewProvider {
     static var previews: some View {
-        ListLayoutView()
+        NavigationView {
+            ListLayoutView()
+        }
     }
 }
