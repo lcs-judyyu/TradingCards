@@ -57,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				5A970E552739F8F7006D5862 /* Info.plist */,
+				5A91566E273B4D1B000C2521 /* Model */,
 				5A970E522739F674006D5862 /* Fonts */,
 				5A77D3422736CD2D008568DB /* TradingCardsApp.swift */,
 				5A77D3442736CD2D008568DB /* ContentView.swift */,
@@ -73,6 +74,13 @@
 				5A77D3492736CD36008568DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5A91566E273B4D1B000C2521 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5A970E522739F674006D5862 /* Fonts */ = {
