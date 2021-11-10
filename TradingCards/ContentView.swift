@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //Stored Properties
+    let item: PlayerCard
+    
     var body: some View {
         ZStack {
             //background image
@@ -41,7 +44,7 @@ struct ContentView: View {
                 .frame(width: 370, height: 230, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.top, 570)
-                
+            
             //content
             //ice hockey text
             HStack(alignment: .top, spacing: 0) {
@@ -82,7 +85,7 @@ struct ContentView: View {
                             .padding(.top, 6)
                         
                         VStack {
-
+                            
                             //name
                             Text("John Johnson")
                                 .font(Font.custom("Andale Mono", size: 36).weight(.bold))
@@ -103,11 +106,11 @@ struct ContentView: View {
                     .padding(10)
                 }
                 //placeholder
-                    HStack {
-                        Text("Data")
-                            .padding(.init(top: 150, leading: 5, bottom: 110, trailing: 5))
-                            .opacity(0)
-                    }
+                HStack {
+                    Text("Data")
+                        .padding(.init(top: 150, leading: 5, bottom: 110, trailing: 5))
+                        .opacity(0)
+                }
             }
             
             //data section
@@ -123,7 +126,7 @@ Pos: LD
 """)
                         .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
-                    .padding(.bottom, 55)
+                        .padding(.bottom, 55)
                     
                     Text("""
 Proj. WAR %: 2%
@@ -134,7 +137,7 @@ Finishing: 27%
 """)
                         .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
-                    .padding(.bottom, 55)
+                        .padding(.bottom, 55)
                 }
                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
             }
