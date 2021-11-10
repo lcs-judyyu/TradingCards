@@ -121,6 +121,7 @@ Number: 3
 Born: United States
 Pos: LD
 """)
+                        .kerning(5)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                     .padding(.bottom, 55)
                     
@@ -131,9 +132,11 @@ PK: 6%
 QoC: 52%
 Finishing: 27%
 """)
+                        .kerning(5)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                     .padding(.bottom, 55)
                 }
+                .font(Font.custom("Avenir Next Condensed", size: 20).weight(.regular))
             }
             
             //team logo
