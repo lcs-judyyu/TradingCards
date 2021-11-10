@@ -26,6 +26,7 @@ struct DetailView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 65)
                 .padding(.bottom, 170)
+            
             //white for photo and names
             Color.white.opacity(0.8)
                 .frame(width: 310, height: 440, alignment: .center)
@@ -35,15 +36,15 @@ struct DetailView: View {
             
             //grey for data
             Color.gray.opacity(0.45)
-                .frame(width: 380, height: 240, alignment: .center)
+                .frame(width: 380, height: 220, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                .padding(.top, 570)
+                .padding(.top, 560)
             
             //white for data
             Color.white.opacity(0.8)
-                .frame(width: 370, height: 230, alignment: .center)
+                .frame(width: 370, height: 210, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
-                .padding(.top, 570)
+                .padding(.top, 560)
             
             //content
             //ice hockey text
@@ -63,8 +64,8 @@ struct DetailView: View {
                 //hockey icon
                 Image("HockeyIconWhite")
                     .resizable()
-                    .frame(width: 100, height: 100, alignment: .topLeading)
-                    .padding(.top, 20)
+                    .frame(width: 110, height: 110, alignment: .topLeading)
+                    .padding(.top, 10)
                     .padding(.leading, 10)
                 
                 HStack(alignment: .top, spacing: 7) {
@@ -136,10 +137,10 @@ struct DetailView: View {
                 Image(player.teamLogo)
                     .resizable()
                     .frame(width: 110, height: 110, alignment: .topTrailing)
-                    .position(x: 350, y: 95)
+                    .position(x: 350, y: 80)
             }
         }
-        .edgesIgnoringSafeArea(.all)
+        .edgesIgnoringSafeArea([.bottom])
     }
 }
 

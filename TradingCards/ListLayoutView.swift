@@ -21,7 +21,7 @@ struct ListLayoutView: View {
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Jack Johnson")
                             .bold()
-                            .font(.title3)
+                            .font(.headline)
                         Text("New York Rangers")
                             .font(.caption)
                     }
