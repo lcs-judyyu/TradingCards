@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
     
     //Stored Properties
-    let item: PlayerCard
+    let player: PlayerCard
     
     var body: some View {
         ZStack {
             //background image
-            Image("HockeyCardsBackground")
+            Image(player.backgroundImage)
                 .resizable()
                 .frame(width: 420, height: 900, alignment: .center)
             
@@ -77,7 +77,7 @@ struct ContentView: View {
                     }
                     VStack {
                         //photo
-                        Image("JackJohnson")
+                        Image(player.photoName)
                             .resizable()
                             .frame(width: 300, height: 300, alignment: .center)
                             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
@@ -87,7 +87,7 @@ struct ContentView: View {
                         VStack {
                             
                             //name
-                            Text("John Johnson")
+                            Text(player.playerName)
                                 .font(Font.custom("Andale Mono", size: 36).weight(.bold))
                                 .textCase(.uppercase)
                                 .allowsTightening(true)
@@ -95,7 +95,7 @@ struct ContentView: View {
                             Divider().frame(width: 130, height: 2, alignment: .center).background(Color.gray)
                             
                             //team name
-                            Text("New York Rangers")
+                            Text(player.teamName)
                                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                                 .padding(.top, 5)
                         }
@@ -118,23 +118,12 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack {
-                    Text("""
-Age: 34
-Number: 3
-Born: United States
-Pos: LD
-""")
+                    Text(player.firstColumnOfData)
                         .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                         .padding(.bottom, 55)
                     
-                    Text("""
-Proj. WAR %: 2%
-EV Off: 3%
-PK: 6%
-QoC: 52%
-Finishing: 27%
-""")
+                    Text(player.secondColumnOfData)
                         .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                         .padding(.bottom, 55)
@@ -144,7 +133,7 @@ Finishing: 27%
             
             //team logo
             VStack {
-                Image("NYR")
+                Image(player.teamLogo)
                     .resizable()
                     .frame(width: 100, height: 100, alignment: .topTrailing)
                     .position(x: 350, y: 95)
@@ -156,6 +145,6 @@ Finishing: 27%
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DetailView(player: ListOfPlayers.first!)
     }
 }

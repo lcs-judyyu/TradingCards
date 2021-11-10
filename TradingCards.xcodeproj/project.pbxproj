@@ -10,7 +10,7 @@
 		5A53E508273B50F500E8964E /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53E507273B50F500E8964E /* PlayerCard.swift */; };
 		5A53E50B273B514200E8964E /* ListLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53E50A273B514200E8964E /* ListLayoutView.swift */; };
 		5A77D3432736CD2D008568DB /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77D3422736CD2D008568DB /* TradingCardsApp.swift */; };
-		5A77D3452736CD2D008568DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77D3442736CD2D008568DB /* ContentView.swift */; };
+		5A77D3452736CD2D008568DB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77D3442736CD2D008568DB /* DetailView.swift */; };
 		5A77D3472736CD36008568DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3462736CD36008568DB /* Assets.xcassets */; };
 		5A77D34A2736CD36008568DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3492736CD36008568DB /* Preview Assets.xcassets */; };
 		5A970E542739F708006D5862 /* SairaStencilOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */; };
@@ -22,7 +22,7 @@
 		5A53E50A273B514200E8964E /* ListLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayoutView.swift; sourceTree = "<group>"; };
 		5A77D33F2736CD2D008568DB /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A77D3422736CD2D008568DB /* TradingCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingCardsApp.swift; sourceTree = "<group>"; };
-		5A77D3442736CD2D008568DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5A77D3442736CD2D008568DB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5A77D3462736CD36008568DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A77D3492736CD36008568DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SairaStencilOne-Regular.ttf"; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				5A91566E273B4D1B000C2521 /* Model */,
 				5A970E522739F674006D5862 /* Fonts */,
 				5A53E50A273B514200E8964E /* ListLayoutView.swift */,
-				5A77D3442736CD2D008568DB /* ContentView.swift */,
+				5A77D3442736CD2D008568DB /* DetailView.swift */,
 				5A970E56273A1174006D5862 /* TestView.swift */,
 				5A77D3462736CD36008568DB /* Assets.xcassets */,
 				5A77D3482736CD36008568DB /* Preview Content */,
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A970E57273A1175006D5862 /* TestView.swift in Sources */,
-				5A77D3452736CD2D008568DB /* ContentView.swift in Sources */,
+				5A77D3452736CD2D008568DB /* DetailView.swift in Sources */,
 				5A53E508273B50F500E8964E /* PlayerCard.swift in Sources */,
 				5A77D3432736CD2D008568DB /* TradingCardsApp.swift in Sources */,
 				5A53E50B273B514200E8964E /* ListLayoutView.swift in Sources */,

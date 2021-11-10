@@ -65,7 +65,7 @@ Consist: 9%
     PlayerCard(backgroundImage: "SecondHockeyCardsBackground",
                photoName: "VictorHedman",
                playerName: "Victor Hedman",
-               teamName: "Tempa Bay Lightning",
+               teamName: "Tampa Bay Lightning",
                firstColumnOfData: """
 Age: 30
 Number: 77
