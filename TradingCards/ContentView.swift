@@ -32,15 +32,15 @@ struct ContentView: View {
             
             //grey for data
             Color.gray.opacity(0.45)
-                .frame(width: 380, height: 250, alignment: .center)
+                .frame(width: 380, height: 240, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .padding(.top, 600)
+                .padding(.top, 570)
             
             //white for data
             Color.white.opacity(0.8)
-                .frame(width: 370, height: 240, alignment: .center)
+                .frame(width: 370, height: 230, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .padding(.top, 600)
+                .padding(.top, 570)
                 
             //content
             //ice hockey text
@@ -55,13 +55,14 @@ struct ContentView: View {
                     .position(x: 40, y: 300)
             }
             
-            VStack(alignment: .leading, spacing: 10){
+            VStack(alignment: .leading, spacing: -3){
                 
                 //hockey icon
                 Image("HockeyIconWhite")
                     .resizable()
                     .frame(width: 100, height: 100, alignment: .topLeading)
                     .padding(.top, 20)
+                    .padding(.leading, 10)
                 
                 HStack(alignment: .top, spacing: 10) {
                     VStack {
@@ -75,11 +76,12 @@ struct ContentView: View {
                         //photo
                         Image("JackJohnson")
                             .resizable()
-                            .frame(width: 300, height: 300, alignment: .trailing)
+                            .frame(width: 300, height: 300, alignment: .center)
                             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                             .padding(.trailing, 11)
                             .padding(.top, 6)
                         VStack {
+
                             //name
                             Text("John Johnson")
                                 .font(Font.custom("Andale Mono", size: 36).weight(.bold))
@@ -88,16 +90,15 @@ struct ContentView: View {
                             Text("New York Rangers")
                                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                         }
-                        .padding(.bottom, 90)
-       
-                        .frame(width: 280, height: 200, alignment: .center)
+                        .padding(.bottom, 10)
+                        .frame(width: 280, height: 130, alignment: .center)
                     }
                     .padding(10)
                 }
                 //placeholder
                     HStack {
                         Text("Data")
-                            .padding(.init(top: 50, leading: 35, bottom: 150, trailing: 75))
+                            .padding(.init(top: 150, leading: 5, bottom: 110, trailing: 5))
                             .opacity(0)
                     }
             }
@@ -133,7 +134,7 @@ Finishing: 27%
                 Image("NYR")
                     .resizable()
                     .frame(width: 100, height: 100, alignment: .topTrailing)
-                    .position(x: 350, y: 85)
+                    .position(x: 350, y: 95)
             }
         }
         .edgesIgnoringSafeArea(.all)
