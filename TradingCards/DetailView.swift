@@ -21,13 +21,13 @@ struct DetailView: View {
             
             //clear color background
             //gray for photo and names
-            Color.gray
-                .frame(width: 330, height: 460, alignment: .center)
+            Color.gray.opacity(0.65)
+                .frame(width: 320, height: 450, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 65)
                 .padding(.bottom, 170)
             //white for photo and names
-            Color.white
+            Color.white.opacity(0.8)
                 .frame(width: 310, height: 440, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 65)
@@ -135,8 +135,8 @@ struct DetailView: View {
             VStack {
                 Image(player.teamLogo)
                     .resizable()
-                    .frame(width: 100, height: 100, alignment: .topTrailing)
-                    .position(x: 350, y: 95)
+                    .frame(width: 120, height: 120, alignment: .topTrailing)
+                    .position(x: 350, y: 105)
             }
         }
         .edgesIgnoringSafeArea(.all)
