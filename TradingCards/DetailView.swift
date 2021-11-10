@@ -128,15 +128,15 @@ struct DetailView: View {
                         .frame(width: 160, height: 200, alignment: .topLeading)
                         .padding(.bottom, 55)
                 }
-                .font(Font.custom("Avenir Next", size: 20).weight(.regular))
+                .font(Font.custom("Avenir Next", size: 20).weight(.medium))
             }
             
             //team logo
             VStack {
                 Image(player.teamLogo)
                     .resizable()
-                    .frame(width: 120, height: 120, alignment: .topTrailing)
-                    .position(x: 350, y: 105)
+                    .frame(width: 110, height: 110, alignment: .topTrailing)
+                    .position(x: 350, y: 95)
             }
         }
         .edgesIgnoringSafeArea(.all)

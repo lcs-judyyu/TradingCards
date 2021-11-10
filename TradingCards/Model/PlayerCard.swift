@@ -19,6 +19,7 @@ struct PlayerCard: Identifiable {
     let firstColumnOfData: String
     let secondColumnOfData: String
     let teamLogo: String
+    //let teamColor: Color
     
 }
 
@@ -40,8 +41,8 @@ EV Off: 3%
 PK: 6%
 QoC: 52%
 Finishing: 27%
-""",
-               teamLogo: "NYR")
+"""
+              , teamLogo: "NYR")
     ,
     PlayerCard(backgroundImage: "OSHockeyCardsBackground",
                photoName: "MattMurray",
