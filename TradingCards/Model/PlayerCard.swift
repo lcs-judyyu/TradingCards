@@ -19,7 +19,7 @@ struct PlayerCard: Identifiable {
     let firstColumnOfData: String
     let secondColumnOfData: String
     let teamLogo: String
-    //let teamColor: Color
+    let rowColor: Color
     
 }
 
@@ -42,7 +42,7 @@ PK: 6%
 QoC: 52%
 Finishing: 27%
 """
-              , teamLogo: "NYR")
+               , teamLogo: "NYR", rowColor: Color("navyBlue"))
     ,
     PlayerCard(backgroundImage: "OSHockeyCardsBackground",
                photoName: "MattMurray",
@@ -61,7 +61,7 @@ PK: 56%
 QS: 21%
 Consist: 9%
 """,
-               teamLogo: "OS")
+               teamLogo: "OS", rowColor: Color("darkRed"))
     ,
     PlayerCard(backgroundImage: "SecondHockeyCardsBackground",
                photoName: "VictorHedman",
@@ -80,7 +80,7 @@ EV Def: 78%
 PK: 97%
 Finishing: 90%
 """,
-               teamLogo: "TBL")
+               teamLogo: "TBL", rowColor: Color("gold"))
     ,
     PlayerCard(backgroundImage: "HockeyCardsBackground",
                photoName: "ArtemiPanarin",
@@ -99,7 +99,7 @@ G: 2
 A: 11
 SH: 21
 """,
-               teamLogo: "NYR")
+               teamLogo: "NYR", rowColor: Color("navyBlue"))
     ,
     PlayerCard(backgroundImage: "OSHockeyCardsBackground",
                photoName: "ShanePinto",
@@ -118,5 +118,5 @@ P: 1
 S: 5
 PIM: 2
 """,
-               teamLogo: "OS")
+               teamLogo: "OS", rowColor: Color("darkRed"))
 ]
