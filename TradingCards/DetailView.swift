@@ -22,14 +22,14 @@ struct DetailView: View {
             
             //clear color background
             //gray for photo and names
-            Color.gray.opacity(0.65)
+            Color.gray.opacity(0.55)
                 .frame(width: 320, height: 458, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 65)
                 .padding(.bottom, 170)
             
             //white for photo and names
-            Color.white.opacity(0.8)
+            Color.white.opacity(0.85)
                 .frame(width: 310, height: 448, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 65)
@@ -66,7 +66,7 @@ struct DetailView: View {
                 Image("HockeyIconWhite")
                     .resizable()
                     .frame(width: 110, height: 110, alignment: .topLeading)
-                    .padding(.top, 10)
+                    .padding(.top, 2)
                     .padding(.leading, 10)
                 
                 HStack(alignment: .top, spacing: 7) {
@@ -84,7 +84,7 @@ struct DetailView: View {
                             .frame(width: 300, height: 300, alignment: .center)
                             .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                             .padding(.trailing, 17)
-                            .padding(.top, 6)
+                            .padding(.top, 1)
                         
                         VStack {
                             //name
@@ -98,9 +98,11 @@ struct DetailView: View {
                             
                             //team name
                             Text(player.teamName)
+                                .kerning(1)
                                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                                 .padding(.top, 5)
                                 .padding(.bottom, 10)
+                
                         }
                         .frame(width: 280, height: 130, alignment: .center)
                         .padding(.trailing, 20)
@@ -123,12 +125,12 @@ struct DetailView: View {
                     Text(player.firstColumnOfData)
                         .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
-                        .padding(.bottom, 55)
+                        .padding(.bottom, 65)
                     
                     Text(player.secondColumnOfData)
                         .lineSpacing(6.0)
                         .frame(width: 160, height: 200, alignment: .topLeading)
-                        .padding(.bottom, 55)
+                        .padding(.bottom, 65)
                 }
                 .font(Font.custom("Avenir Next", size: 20).weight(.medium))
             }
