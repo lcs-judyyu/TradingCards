@@ -89,7 +89,7 @@ struct DetailView: View {
                         VStack {
                             //name
                             Text(player.playerName)
-                                .font(Font.custom("Andale Mono", size: 38).weight(.black))
+                                .font(Font.custom("Andale Mono", size: 32).weight(.black))
                                 .bold()
                                 .textCase(.uppercase)
                                 .allowsTightening(true)

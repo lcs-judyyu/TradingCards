@@ -12,6 +12,8 @@ struct ListLayoutView: View {
     //Stored Properties
 //let player: PlayerCard
     
+    //var teamColor = "darkRed"
+    
     var body: some View {
         
         VStack {
@@ -48,10 +50,11 @@ struct ListLayoutView: View {
                     
                 }
                 .listRowBackground(Color("navyBlue"))
-                //var rowColor1 = "darkRed"
+                //.listRowBackground(currentPlayer.rowColor)
                 
                 //if (player.teamName == "New York Rangers") {var rowColor1 = "navyBlue"}
-                    //.listRowBackground(Color(rowColor1))
+                //.listRowBackground(Color(teamColor))
+                //.listRowBackground((teamName.String == "navyBlue") ? Color("") : Color(""))
                 
             }
             .navigationTitle("Hockey Cards")

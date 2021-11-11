@@ -72,13 +72,13 @@ Age: 30
 Number: 77
 Born: Sweden
 Pos: Defenseman
+Finishing: 90%
 """,
                secondColumnOfData: """
 Proj. WAR %: 97%
 EV Off: 91%
 EV Def: 78%
 PK: 97%
-Finishing: 90%
 """,
                teamLogo: "TBL", rowColor: Color("gold"))
     ,
