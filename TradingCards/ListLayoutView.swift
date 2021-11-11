@@ -8,32 +8,54 @@
 import SwiftUI
 
 struct ListLayoutView: View {
+    
+    //Stored Properties
+//let player: PlayerCard
+    
     var body: some View {
-        List {
-            NavigationLink(destination: TestView()){
-                HStack {
-                    Image("JackJohnson")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50, height: 50, alignment: .leading)
-                        .clipShape(Circle())
-                    
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text("Jack Johnson")
-                            .bold()
-                            .font(.title3)
-                        Text("New York Rangers")
-                            .font(.caption)
-                            .kerning(0.4)
-                    }
-                    .foregroundColor(Color.white)
-                }
-                .padding(.vertical, 2)
-            }
-            .listRowBackground(Color("navyBlue"))
         
+        VStack {
+        
+            List {
+                ForEach(ListOfPlayers) { currentPlayer in
+                    
+                    NavigationLink(destination: {
+                        
+                        DetailView(player: currentPlayer)
+                        
+                    }, label: {
+                        
+                        HStack {
+                            Image(currentPlayer.photoName)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50, alignment: .leading)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading, spacing: 5) {
+                                Text(currentPlayer.playerName)
+                                    .bold()
+                                    .font(.title3)
+                                Text(currentPlayer.teamName)
+                                    .font(.caption)
+                                    .kerning(0.4)
+                            }
+                            .foregroundColor(Color.white)
+                        }
+                        .padding(.vertical, 2)
+                        
+                    })
+                    
+                }
+                .listRowBackground(Color("navyBlue"))
+                //var rowColor1 = "darkRed"
+                
+                //if (player.teamName == "New York Rangers") {var rowColor1 = "navyBlue"}
+                    //.listRowBackground(Color(rowColor1))
+                
+            }
+            .navigationTitle("Hockey Cards")
         }
-        .navigationTitle("Hockey Cards")
     }
 }
 
