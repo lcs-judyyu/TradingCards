@@ -13,6 +13,8 @@ struct ListLayoutView: View {
 //let player: PlayerCard
     
     //var teamColor = "darkRed"
+    //let rowcolors: [Color] = [Color("navyBlue"), Color("darkRed"), Color("gold"), Color("navyBlue"), Color("darkRed")]
+    //let id = UUID()
     
     var body: some View {
         
@@ -43,6 +45,7 @@ struct ListLayoutView: View {
                                     .kerning(0.4)
                             }
                             .foregroundColor(Color.white)
+                            
                         }
                         .padding(.vertical, 2)
                         
@@ -54,7 +57,7 @@ struct ListLayoutView: View {
                 
                 //if (player.teamName == "New York Rangers") {var rowColor1 = "navyBlue"}
                 //.listRowBackground(Color(teamColor))
-                //.listRowBackground((teamName.String == "navyBlue") ? Color("") : Color(""))
+                //.listRowBackground(rowcolors)
                 
             }
             .navigationTitle("Hockey Cards")

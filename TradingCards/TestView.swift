@@ -7,7 +7,20 @@
 
 import SwiftUI
 
+struct Header: View {
+ var body: some View {
+ Image("JackJohnson")
+         .resizable()
+         .scaledToFit()
+         .frame(width: 500, height: 200, alignment: .top)
+ .overlay(Text("Hockey")
+ .font(Font.system(size: 120, design: Font.Design.serif))
+ .foregroundColor(.green))
+ }
+}
+
 struct TestView: View {
+    
     var body: some View {
         ZStack {
             //background image
@@ -29,13 +42,13 @@ struct TestView: View {
                 .padding(.bottom, 100)
             //grey for data
             Color.gray.opacity(0.45)
-                .frame(width: 380, height: 250, alignment: .center)
+                .frame(width: 380, height: 250, alignment: .bottomLeading)
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .padding(.top, 600)
             
             //white for data
             Color.white.opacity(0.8)
-                .frame(width: 370, height: 240, alignment: .center)
+                .frame(width: 370, height: 240, alignment: .bottomLeading)
                 .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
                 .padding(.top, 600)
             //content
@@ -108,6 +121,9 @@ struct TestView: View {
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
-        TestView()
+        VStack {
+            Header()
+            TestView()
+        }
     }
 }
