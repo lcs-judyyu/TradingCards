@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct Header: View {
- var body: some View {
- Image("JackJohnson")
-         .resizable()
-         .scaledToFit()
-         .frame(width: 500, height: 200, alignment: .top)
- .overlay(Text("Hockey")
- .font(Font.system(size: 120, design: Font.Design.serif))
- .foregroundColor(.green))
- }
+    var body: some View {
+        Image("JackJohnson")
+            .resizable()
+            .scaledToFit()
+            .frame(width: 500, height: 200, alignment: .top)
+            .overlay(Text("Hockey")
+                        .font(Font.system(size: 120, design: Font.Design.serif))
+                        .foregroundColor(.green))
+    }
 }
 
 struct TestView: View {
@@ -95,7 +95,7 @@ struct TestView: View {
                                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                         }
                         .padding(.bottom, 90)
-       
+                        
                         .frame(width: 280, height: 200, alignment: .center)
                     }
                     .padding(10)
@@ -106,17 +106,17 @@ struct TestView: View {
                         .padding(.init(top: 50, leading: 35, bottom: 150, trailing: 75))
                         .opacity(0)
                 }
-                    }
+            }
             VStack {
                 Spacer()
                 Text("Data")
                     .frame(width: 340, height: 200, alignment: .top)
                     .padding(.bottom, 50)
             }
-            }
+        }
         .edgesIgnoringSafeArea(.all)
     }
-    }
+}
 
 
 struct TestView_Previews: PreviewProvider {

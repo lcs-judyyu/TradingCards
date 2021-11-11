@@ -12,7 +12,7 @@ struct ListLayoutView: View {
     var body: some View {
         
         VStack {
-        
+            
             List {
                 ForEach(ListOfPlayers) { currentPlayer in
                     
@@ -44,7 +44,6 @@ struct ListLayoutView: View {
                         
                     })
                         .listRowBackground(currentPlayer.rowColor)
-                    
                 }
             }
             .navigationTitle("Hockey Cards")

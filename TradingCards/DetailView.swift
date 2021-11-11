@@ -102,7 +102,7 @@ struct DetailView: View {
                                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                                 .padding(.top, 5)
                                 .padding(.bottom, 10)
-                
+                            
                         }
                         .frame(width: 280, height: 130, alignment: .center)
                         .padding(.trailing, 20)
@@ -150,7 +150,7 @@ struct DetailView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-        DetailView(player: ListOfPlayers.first!)
+            DetailView(player: ListOfPlayers.first!)
         }
     }
 }
