@@ -7,17 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A36C773273CA00200915DE5 /* SairaStencilOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A36C772273CA00200915DE5 /* SairaStencilOne-Regular.ttf */; };
+		5A36C775273CA10300915DE5 /* Andale Mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A36C774273CA10300915DE5 /* Andale Mono.ttf */; };
 		5A53E508273B50F500E8964E /* PlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53E507273B50F500E8964E /* PlayerCard.swift */; };
 		5A53E50B273B514200E8964E /* ListLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A53E50A273B514200E8964E /* ListLayoutView.swift */; };
 		5A77D3432736CD2D008568DB /* TradingCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77D3422736CD2D008568DB /* TradingCardsApp.swift */; };
 		5A77D3452736CD2D008568DB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A77D3442736CD2D008568DB /* DetailView.swift */; };
 		5A77D3472736CD36008568DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3462736CD36008568DB /* Assets.xcassets */; };
 		5A77D34A2736CD36008568DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A77D3492736CD36008568DB /* Preview Assets.xcassets */; };
-		5A970E542739F708006D5862 /* SairaStencilOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */; };
 		5A970E57273A1175006D5862 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A970E56273A1174006D5862 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A36C772273CA00200915DE5 /* SairaStencilOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SairaStencilOne-Regular.ttf"; sourceTree = "<group>"; };
+		5A36C774273CA10300915DE5 /* Andale Mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Andale Mono.ttf"; sourceTree = "<group>"; };
 		5A53E507273B50F500E8964E /* PlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCard.swift; sourceTree = "<group>"; };
 		5A53E50A273B514200E8964E /* ListLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLayoutView.swift; sourceTree = "<group>"; };
 		5A77D33F2736CD2D008568DB /* TradingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,7 +28,6 @@
 		5A77D3442736CD2D008568DB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		5A77D3462736CD36008568DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A77D3492736CD36008568DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SairaStencilOne-Regular.ttf"; sourceTree = "<group>"; };
 		5A970E552739F8F7006D5862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5A970E56273A1174006D5862 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,7 +102,8 @@
 		5A970E522739F674006D5862 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5A970E532739F708006D5862 /* SairaStencilOne-Regular.ttf */,
+				5A36C772273CA00200915DE5 /* SairaStencilOne-Regular.ttf */,
+				5A36C774273CA10300915DE5 /* Andale Mono.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -163,8 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A970E542739F708006D5862 /* SairaStencilOne-Regular.ttf in Resources */,
 				5A77D34A2736CD36008568DB /* Preview Assets.xcassets in Resources */,
+				5A36C775273CA10300915DE5 /* Andale Mono.ttf in Resources */,
+				5A36C773273CA00200915DE5 /* SairaStencilOne-Regular.ttf in Resources */,
 				5A77D3472736CD36008568DB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,14 +23,14 @@ struct DetailView: View {
             //clear color background
             //gray for photo and names
             Color.gray.opacity(0.65)
-                .frame(width: 320, height: 450, alignment: .center)
+                .frame(width: 320, height: 458, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 65)
                 .padding(.bottom, 170)
             
             //white for photo and names
             Color.white.opacity(0.8)
-                .frame(width: 310, height: 440, alignment: .center)
+                .frame(width: 310, height: 448, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 20, style: .continuous))
                 .padding(.leading, 65)
                 .padding(.bottom, 170)
@@ -51,13 +51,13 @@ struct DetailView: View {
             //ice hockey text
             HStack(alignment: .top, spacing: 0) {
                 Text("Ice Hockey")
-                    .kerning(10)
+                    .kerning(6)
                     .textCase(.uppercase)
-                    .font(Font.custom("Saira Stencil One", size: 36))
-                    .padding(.trailing, 50)
+                    .font(Font.custom("Saira Stencil One", size: 59))
+                    .padding(.trailing, 20)
                     .multilineTextAlignment(.trailing)
                     .rotationEffect(.degrees(-90))
-                    .position(x: 40, y: 300)
+                    .position(x: 40, y: 340)
             }
             
             VStack(alignment: .leading, spacing: -3){
@@ -74,7 +74,7 @@ struct DetailView: View {
                         //placeholder
                         Text("Ice Hockey")
                             .textCase(.uppercase)
-                            .font(Font.custom("Saira Stencil One", size: 36))
+                            .font(Font.custom("SairaStencilOne", size: 36))
                             .opacity(0)
                     }
                     VStack {
@@ -87,10 +87,10 @@ struct DetailView: View {
                             .padding(.top, 6)
                         
                         VStack {
-                            
                             //name
                             Text(player.playerName)
-                                .font(Font.custom("Andale Mono", size: 36).weight(.bold))
+                                .font(Font.custom("Andale Mono", size: 38).weight(.black))
+                                .bold()
                                 .textCase(.uppercase)
                                 .allowsTightening(true)
                             
@@ -100,8 +100,8 @@ struct DetailView: View {
                             Text(player.teamName)
                                 .font(Font.custom("Avenir Next", size: 20).weight(.regular))
                                 .padding(.top, 5)
+                                .padding(.bottom, 10)
                         }
-                        .padding(.bottom, 10)
                         .frame(width: 280, height: 130, alignment: .center)
                         .padding(.trailing, 20)
                     }
