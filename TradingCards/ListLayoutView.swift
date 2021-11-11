@@ -9,13 +9,6 @@ import SwiftUI
 
 struct ListLayoutView: View {
     
-    //Stored Properties
-//let player: PlayerCard
-    
-    //var teamColor = "darkRed"
-    //let rowcolors: [Color] = [Color("navyBlue"), Color("darkRed"), Color("gold"), Color("navyBlue"), Color("darkRed")]
-    //let id = UUID()
-    
     var body: some View {
         
         VStack {
@@ -50,15 +43,9 @@ struct ListLayoutView: View {
                         .padding(.vertical, 2)
                         
                     })
+                        .listRowBackground(currentPlayer.rowColor)
                     
                 }
-                .listRowBackground(Color("navyBlue"))
-                //.listRowBackground(currentPlayer.rowColor)
-                
-                //if (player.teamName == "New York Rangers") {var rowColor1 = "navyBlue"}
-                //.listRowBackground(Color(teamColor))
-                //.listRowBackground(rowcolors)
-                
             }
             .navigationTitle("Hockey Cards")
         }
