@@ -40,7 +40,6 @@ Proj. WAR %: 2%
 EV Off: 3%
 PK: 6%
 QoC: 52%
-Finishing: 27%
 """
                , teamLogo: "NYR", rowColor: Color("navyBlue"))
     ,
@@ -72,7 +71,6 @@ Age: 30
 Number: 77
 Born: Sweden
 Pos: Defenseman
-Finishing: 90%
 """,
                secondColumnOfData: """
 Proj. WAR %: 97%

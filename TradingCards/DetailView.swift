@@ -123,16 +123,16 @@ struct DetailView: View {
                 
                 HStack {
                     Text(player.firstColumnOfData)
-                        .lineSpacing(6.0)
+                        .lineSpacing(5.5)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                         .padding(.bottom, 65)
                     
                     Text(player.secondColumnOfData)
-                        .lineSpacing(6.0)
+                        .lineSpacing(5.5)
                         .frame(width: 160, height: 200, alignment: .topLeading)
                         .padding(.bottom, 65)
                 }
-                .font(Font.custom("Avenir Next", size: 20).weight(.medium))
+                .font(Font.custom("Avenir Next", size: 18).weight(.medium))
             }
             
             //team logo
