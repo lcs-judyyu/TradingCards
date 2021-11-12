@@ -51,9 +51,9 @@ struct DetailView: View {
             //ice hockey text
             HStack(alignment: .top, spacing: 0) {
                 Text("Ice Hockey")
-                    .kerning(6)
+                    .kerning(5)
                     .textCase(.uppercase)
-                    .font(Font.custom("Saira Stencil One", size: 59))
+                    .font(Font.custom("Saira Stencil One", size: 50))
                     .padding(.trailing, 20)
                     .multilineTextAlignment(.trailing)
                     .rotationEffect(.degrees(-90))
@@ -89,7 +89,7 @@ struct DetailView: View {
                         VStack {
                             //name
                             Text(player.playerName)
-                                .font(Font.custom("Andale Mono", size: 32).weight(.black))
+                                .font(Font.custom("Andale Mono", size: 27).weight(.black))
                                 .bold()
                                 .textCase(.uppercase)
                                 .allowsTightening(true)
