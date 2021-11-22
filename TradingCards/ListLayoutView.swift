@@ -14,6 +14,9 @@ struct ListLayoutView: View {
         VStack {
             
             List {
+                
+                Section(header: Text("Men")) {
+                
                 ForEach(ListOfPlayers) { currentPlayer in
                     
                     NavigationLink(destination: {
@@ -45,7 +48,9 @@ struct ListLayoutView: View {
                     })
                         .listRowBackground(currentPlayer.rowColor)
                 }
+                }
             }
+            .listStyle(.sidebar)
             .navigationTitle("Hockey Cards")
         }
     }
